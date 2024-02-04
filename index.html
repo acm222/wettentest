@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #45a049;
+      color: white;
+    }
+
+    .header img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .header button {
+      background-color: white;
+      color: #45a049;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+      border: 2px solid #45a049;
+    }
+
+    .header button:hover {
+      background-color: #45a049;
+      color: white;
+    }
+
+    .section {
+      margin: 20px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .wettenbutton {
+      background-color: #0d0e0d;
+      border: none;
+      color: white;
+      padding: 8px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+      width: 200px;
+    }
+
+    .wettenbutton:hover {
+      background-color: #45a049;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #45a049;
+      color: white;
+    }
+
+    .footertext {
+      font-size: 17.85px;
+    }
+
+    .impressum {
+      text-decoration: underline;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .mail-button {
+      background-color: #0d0e0d;
+      border: none;
+      color: white;
+      padding: 8px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+      width: 200px;
+    }
+
+    .mail-button:hover {
+      background-color: #45a049;
+    }
+
+    @media (min-width: 768px) {
+      .header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .header img {
+        max-width: 300px;
+      }
+
+      .header button {
+        margin-top: 0;
+      }
+
+      .section {
+        max-width: 600px;
+      }    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Viscardi wetten.png" alt="Logo-viscardi-wetten">
+            <button onclick="location.href='#wetten';">Los geht's</button>
+        </div>
+
+        <div class="section" id="geschichte">
+            <h2>Geschichte</h2>
+            <p>Das Wetten unter Freunden hat schon früh Bedeutung im leben der Schüler der Klasse 10D angenommen.
+            So wetteten die einen über die Note eines Schülers und die anderen ob man in Bio eine ex schreibt oder nicht.
+            Mit der Intention, wetten zu können aber trotzdem die Digitalisierung in Schach zu halten, wurde das <strong>Viscardi-Wetten Portal</strong> eröffnet.</p>
+        </div>
+
+        <div class="section" id="rechtliches">
+            <h2>Rechtliches</h2>
+            <p>Mit Bestätigung des alters und der Zustimmung unserer Richtlienien bestätigen das sie das 18. Lebensjahr schon ereicht haben. Sie stimmten der Verwendung ihrer personen bezogenen Daten zu.
+                  Vertrags Gerecht ist durch die Zustimmung jegliche Meldung oder Anzeige aufgrund von Motiven wie mobbing, da gegen sie gewetten wurde, rechtswiedrig. </p>
+        </div>
+
+        <div class="section" id="wetten">
+            <h2>Wetten</h2>
+            <p> Beginne zu Wetten</p>
+            <p><strong>Wettereignisse dieser Woche</strong></p>
+            <button class="wettenbutton">Jetzt Wetten</button>
+        </div>
+
+        <div class="section" id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Liegt ein Anliegen oder Ereignisvorschlag vor, steht ihnen hier der kontakt zu verfügung:</p>
+            <a href="mailto:viscardiwetten@gmail.com" class="mail-button">Kontaktieren</a>
+        </div>
+        <div class="footer">
+            <p class="footertext">&copy; <strong> 2024 Viscardi-Wetten. </strong> (achim mueller) Alle Rechte vorbehalten. </p>
+            <div class="impressum">
+               <strong>Impressum</strong>
+               <strong>Kontakt</strong>
+               <strong>AGB</strong>
+               
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
